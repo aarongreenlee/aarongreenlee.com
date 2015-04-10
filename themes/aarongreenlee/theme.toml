@@ -1,0 +1,15 @@
+name = "Aarongreenlee"
+license = "MIT"
+description = "A custom theme for aarongreenlee.com"
+tags = ["blog", "personal"]
+features = ["blog"]
+
+[author]
+    name = "Aaron Greenlee"
+    homepage = "http://aarongreenlee.com"
+
+# If Porting existing theme
+[original]
+    author =  "mdo"
+    homepage = "http://andhyde.com"
+    repo = "http://www.github.com/mdo/hyde"

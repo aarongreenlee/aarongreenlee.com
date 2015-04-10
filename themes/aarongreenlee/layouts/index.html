@@ -1,0 +1,72 @@
+{{ partial "head.html" . }}
+<body class="index">
+
+  <div class="container">
+    <!-- <div class="scroll-notification">SCROLL</div> -->
+     <section class="section section-1 active" data-section="1">
+       <h1 class="title">Aaron Greenlee</h1>
+       <span id="scroll">scroll</span>
+    </section>
+
+   <section class="section section-2 active" data-section="2">
+
+     <h1 class="title about">About</h1>
+
+     <div class="aboutText">
+       <p>Aaron Greenlee is an accomplished full-stack programmer, presenter, and businessman who currently serves as a Chief Technology Officer for Wrecking Ball Media Group. Aaron has been programming since the age of sixteen when he founded a team to develop a video game expansion pack for the popular game ‘Quake’. Most recently in his work with Wrecking Ball, Aaron has architected and developed multiple platforms for Adobe. He honed his business skills as Sales Administration Manager and Regional Sales Manager in the recreational vehicle industry. Aaron has presented at various conferences and symposiums, synthesizing his programming, business, and presentation skills to influence and support both local and larger communities. He also enjoys creating, developing, and supporting new start-ups, recently including Guardly and InAppVision. Beyond work, Aaron serves as a mentor in multiple communities by mentoring colleagues and community members, as well as elementary students interested in learning programming.</p>
+
+       <img class="brand" src="{{ .Site.BaseUrl }}/img/brand-aop.png">
+       <img class="brand" src="{{ .Site.BaseUrl }}/img/brand-nrv.png">
+       <img class="brand" src="{{ .Site.BaseUrl }}/img/brand-cc.png">
+       <img class="brand" src="{{ .Site.BaseUrl }}/img/brand-wbm.png">
+       <img class="brand" src="{{ .Site.BaseUrl }}/img/brand-adbe.png">
+       <img class="brand" src="{{ .Site.BaseUrl }}/img/brand-g.png">
+       <img class="brand" src="{{ .Site.BaseUrl }}/img/brand-inva.png">
+
+       <div style="height-1200px;">&nbsp;</div>
+
+       <!-- <img id="brands" src="{{ .Site.BaseUrl }}/img/brands-gs.png"> -->
+     </div>
+
+     <!--
+     <h1 class="title">Posts</h1>
+
+     <div class="content container">
+       <div class="posts">
+         {{ range .Data.Pages }}
+           <div class="post">
+             <h1 class="post-title">
+               <a href="{{ .Permalink }}">
+                 {{ .Title }}
+               </a>
+             </h1>
+             <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+
+             {{ .Content }}
+           </div>
+         {{ end }}
+       </div>
+     </div>
+     -->
+    </section>
+
+  </div>
+
+  <!--
+
+  <div id="xp">
+    <section id="welcome" class="slide active">
+      <h1>Hello, I am Aaron!!</h1>
+    </section>
+    <section id="about" class="slide active">
+      <h1>Who the fuck is Aaron?</h1>
+    </section>
+    <section id="content" class="slide active">
+
+    </section>
+  </div>
+-->
+
+  <script src="{{ .Site.BaseUrl }}/js/index.js"></script>
+
+</body></html>

@@ -1,0 +1,145 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@import "compass/layout/stretching",
+"compass/utilities",
+"compass/css3",
+"compass/css3/transition",
+"compass/css3/box-shadow";
+
+%stretched {
+  $stretch-color: #4c6b99;
+  border: 3px solid $stretch-color;
+  @include border-radius(8px);
+  display: block;
+  background-color: darken($stretch-color, 30%);
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.5em;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  color: black;
+}
+
+/* INDEX */
+body.index {
+  //background-image: url('/img/wide-headshot.jpg');
+  //@include background-size(100%);
+  height: 100%;
+}
+
+.scroll-notification{
+  position: fixed;
+  z-index: 100;
+  width: 100px;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  transition: all 300ms ease-out;
+
+  background-color: green;
+}
+
+.section{
+  width: 100%;
+  height: 0vh;
+  padding: 0px;
+  left: 0;
+  opacity: 0.0;
+  overflow: hidden;
+  transition: all 600ms ease-out;
+  position: absolute;
+  text-align: center;
+  font-weight: 100;
+
+  &.active{
+    opacity: 1.0;
+    padding: 40px;
+  }
+}
+
+.section-1{
+  color: white;
+  background-color: blue;
+  height: 100vh;
+  background-image: url('/img/wide-headshot.jpg');
+  //background-image: url('/img/IMG_5615.JPG');
+  @include background-size(auto 100%);
+  background-position: bottom center;
+
+  #scroll {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    display: block;
+    z-index: 99;
+  }
+
+  .title{
+    font-size: 2rem;
+    color: white;
+    text-align: right;
+    position: absolute;
+    left: 0;
+    right: 50%;
+    top: 67%;
+    background-color: rgba(33,23,19,.8);
+    padding: 3vh 4vh 3vh 0;
+    border: 1px solid #000;
+    border-left: none;
+    @include box-shadow(rgba(0,0,0,0.5) 1px 1px 5px);
+  }
+}
+
+.section-2{
+  border-top: 5px solid black;
+  background-color: white;
+  height: auto;
+  top: 100vh;
+
+  div.aboutText {
+    margin-bottom: 8rem;
+
+    img.brand {
+      width: 10%;
+      max-width: 208px;
+      margin: 2rem 3rem;
+
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 2rem;      
+      text-align: left;
+      width: 80%;
+      margin: 0 10%;
+    }
+  }
+
+  .title{
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 1em;
+    font-weight: 700;
+  }
+}
+
+.section-3{
+  background-color: red;
+}
+
+.section-4{
+  background-color: purple;
+}

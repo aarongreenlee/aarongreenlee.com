@@ -1,0 +1,27 @@
+@import "compass/css3/background-size";
+
+html {
+  min-height:100%;/* make sure it is at least as tall as the viewport */
+  position:relative;
+}
+
+body.index {
+  background-image: url('/img/wide-headshot.jpg');
+  @include background-size(100%);
+  height: 100%;
+
+  div.container {
+    background-color: white;
+  }
+}
+
+#hero {
+  //@extend %stretched;
+  //@include stretch;
+  position:fixed !important;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}

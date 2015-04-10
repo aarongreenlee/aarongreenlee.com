@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Recent Content on my new hugo site </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>http://localhost:1313/index.xml/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Thu, 09 Apr 2015 14:17:37 EDT</updated>
+    
+    <item>
+      <title>share/golang</title>
+      <link>http://localhost:1313/share/golang/</link>
+      <pubDate>Thu, 09 Apr 2015 14:17:37 EDT</pubDate>
+      
+      <guid>http://localhost:1313/share/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>share/reboot</title>
+      <link>http://localhost:1313/share/reboot/</link>
+      <pubDate>Thu, 09 Apr 2015 14:17:29 EDT</pubDate>
+      
+      <guid>http://localhost:1313/share/reboot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>share/hoth</title>
+      <link>http://localhost:1313/share/hoth/</link>
+      <pubDate>Thu, 09 Apr 2015 14:17:13 EDT</pubDate>
+      
+      <guid>http://localhost:1313/share/hoth/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
